@@ -4,13 +4,19 @@ header
 }
 
 .img_logo {
-    margin-right: float;
+  margin-right: float;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
 }
 
 .header {
     align-items: center;
       width: 100%;
       display: flex;
+    background-color: #1E5F64;
+  
 }
 
 .container {
