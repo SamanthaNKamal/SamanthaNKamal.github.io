@@ -3,6 +3,12 @@ header
   background-color: #1C2833;
 }
 
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
 .img_logo {
   margin-right: float;
   position: absolute;
