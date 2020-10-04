@@ -1,3 +1,7 @@
+header
+{
+  background-color: #1C2833;
+}
 
 .img_logo {
     margin-left: auto;
@@ -7,7 +11,6 @@
     align-items: center;
       width: 100%;
       display: flex;
-     background-color: #1C2833;
 }
 
 .container {
