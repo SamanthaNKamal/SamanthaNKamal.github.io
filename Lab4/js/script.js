@@ -1,44 +1,50 @@
-let myFullName = "Samantha Kamal"; 
+// Lecture 4 code for javascript testing
+console.log('Hello World');
 
-// 1 Change the content of the div with class "header" to "[Your name]'s Lab 4"
-// 2 Insert two paragraphs into the div with the class "content"
-//  Label each paragraph with a distinct class name
+let firstName = 'Bill'; // String literal
+let lastName = 'Farmer';
 
-<div class="Samantha Kamal's Lab 4">
+console.log(firstName);
 
-  <p id = "myname"></p>
+const interestRate = 0.3;
+//interestRate = 1;
+console.log(interestRate);
 
-  <script>
+let age = 30; //Number literal
+console.log(age)
+let isApproved = true; // Boolean literal
+console.log(isApproved)
+let address = undefined;
+console.log(address)
+let phoneNumber = null;
+console.log(phoneNumber)
+age = null;
+console.log(age)
 
-function myFunction() 
-{
+let person = {
+    firstName: 'Bill',
+    lastName: 'Farmer',
+    age: 30
+};
 
-  var Fullname = "Samantha Kamal";
-  var n = Fullname.length;
-  document.getElementById("myname").innerHTML = n;
-  var third = Fullname.charAt(2)
-  document.getElementById("myname").innerHTML = res;
-  var finalThree = Fullname.slice(11, 14);
-  document.getElementById("myname").innerHTML = res;
+console.log(person.firstName);
 
-// 3 Into the first paragraph, insert the phrase "my name has " length of your name " characters"
-  <p class="content1"> "My name has" n "characters"</p>
+person.firstName = 'Jerry';
+console.log(person.firstName);
+person['firstName'] = 'Susan';
+console.log(person.firstName);
 
-// 4 & 5 Into the second paragraph tag, return the 3rd character in your first name
-  <p class="content2"> "The third character in my name is" third "."</p>
-// 6 Add a new line to your second paragraph
-// 7 Return the final three characters of your last name to that new line
-  <p class="content2"> "The final three characters in my name are" finalThree "."</p>
+let selection = 'lastName';
+person[selection] = 'Fischer';
+console.log(person.firstName);
+console.log(person[selection]);
 
+let groceryList = ['apples','crackers'];
+console.log(groceryList);
+console.log(groceryList[0]);
+groceryList[2] = 'bananas';
+console.log(groceryList);
+groceryList[3] = 42;
+console.log(groceryList);
 
-}
-  </script>
-</div>
-
-
-
-// 8 Substring your first and last name into two separate variables
-
-// 9 Add the total length of your first and last names together
-
-// 10 Display that total next to your name in your header
+console.log(groceryList.length);
