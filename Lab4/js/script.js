@@ -19,7 +19,7 @@ let myFullName = "Samantha Kamal";
 
 
 // 3 Into the first paragraph, insert the phrase "my name has " length of your name " characters"
-  let MyNameHas = "My name has " +myFullName.length + "characters.";
+  let MyNameHas = "My name has " +myFullName.length + " characters.";
   newParagraphOne.append(MyNameHas);
 
 // 4 & 5 Into the second paragraph tag, return the 3rd character in your first name
@@ -38,4 +38,4 @@ let myFullName = "Samantha Kamal";
 // 9 Add the total length of your first and last names together
    let NameL = FName.length + LName.length;
 // 10 Display that total next to your name in your header
-   MyHeading.append(" " +NameL);
+   MyHeading.append("    " +NameL);
