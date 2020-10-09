@@ -4,7 +4,7 @@ let myFullName = "Samantha Kamal";
 // 2 Insert two paragraphs into the div with the class "content"
 //  Label each paragraph with a distinct class name
 
-  document.querySelector("header").innerHTML = myFullName + "\'s Lab 4.\n";
+  document.querySelector("header").innerText += myFullName + "\'s Lab 4.\n";
 
   var newParagraphOne = document.createElement("p1");
   var newParagraphTwo = document.createElement("p2");
