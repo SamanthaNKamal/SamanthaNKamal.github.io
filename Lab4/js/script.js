@@ -1,50 +1,43 @@
-// Lecture 4 code for javascript testing
-console.log('Hello World');
+let myFullName = "Samantha Kamal"; 
 
-let firstName = 'Samantha'; // String literal
-let lastName = 'Kamal';
+// 1 Change the content of the div with class "header" to "[Your name]'s Lab 4"
+// 2 Insert two paragraphs into the div with the class "content"
+//  Label each paragraph with a distinct class name
 
-console.log(firstName);
+  document.querySelector("header").innerHTML = myFullName + "\'s Lab 4.\n";
 
-const interestRate = 0.3;
-//interestRate = 1;
-console.log(interestRate);
+  var newParagraphOne = document.createElement("p1");
+  var newParagraphTwo = document.createElement("p2");
 
-let age = 22; //Number literal
-console.log(age)
-let isApproved = true; // Boolean literal
-console.log(isApproved)
-let address = undefined;
-console.log(address)
-let phoneNumber = null;
-console.log(phoneNumber)
-age = null;
-console.log(age)
+  newParagraphOne.className = "content1";
+  newParagraphTwo.className = "content2";
 
-let person = {
-    firstName: 'Bill',
-    lastName: 'Farmer',
-    age: 22
-};
+  newParagraphOne.appendChild(newParagraphOneText);
+  newParagraphTwo.appendChild(newParagraphTwoText);
 
-console.log(person.firstName);
+  var newContentParagraphs = document.querySelector(".content");
 
-person.firstName = 'Jerry';
-console.log(person.firstName);
-person['firstName'] = 'Susan';
-console.log(person.firstName);
+  newContentParagraphs.appendChild(newParagraphOne);
+  newContentParagraphs.appendChild(newParagraphTwo);
 
-let selection = 'lastName';
-person[selection] = 'Fischer';
-console.log(person.firstName);
-console.log(person[selection]);
+// 3 Into the first paragraph, insert the phrase "my name has " length of your name " characters"
+  var MyNameHas = "My name has" +myFullName.length + "characters.";
+  newParagraphOne.append(MyNameHas);
 
-let groceryList = ['apples','crackers'];
-console.log(groceryList);
-console.log(groceryList[0]);
-groceryList[2] = 'bananas';
-console.log(groceryList);
-groceryList[3] = 42;
-console.log(groceryList);
+// 4 & 5 Into the second paragraph tag, return the 3rd character in your first name
+// 6 Add a new line to your second paragraph
+// 7 Return the final three characters of your last name to that new line
+  var thirdCharacter = "The third character of my name is" +myFullName.charAt(2).toUpperCase();
+  newParagraphTwo.append(thirdCharacter);
 
-console.log(groceryList.length);
+  newParagraphTwo.append("\n");
+  var LastThree = "The last three characters in my name are" + myFullName.substring(myFullName.length - 3, myFullName.length);
+  newParagraphTwo.append(LastThree);
+
+// 8 Substring your first and last name into two separate variables
+  var FName = myFullName.substring(0 , 7);
+  var LName = myFullName.substring(8 , 12);
+// 9 Add the total length of your first and last names together
+   var NameL = FName.length + LName.length;
+// 10 Display that total next to your name in your header
+   document.querySelector("header").append("the length of my first and last name is:" +NameL);
