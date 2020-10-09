@@ -12,6 +12,9 @@ let myFullName = "Samantha Kamal";
   newParagraphOne.className = "content1";
   newParagraphTwo.className = "content2";
 
+  var newParagraphOneText = document.createTextNode("The first new paragraph. \n");
+  var newParagraphTwoText = document.createTextNode("The second new paragraph. \n");
+
   newParagraphOne.appendChild(newParagraphOneText);
   newParagraphTwo.appendChild(newParagraphTwoText);
 
