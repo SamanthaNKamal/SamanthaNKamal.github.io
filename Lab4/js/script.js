@@ -5,7 +5,7 @@ let myFullName = "Samantha Kamal";
 //  Label each paragraph with a distinct class name
 
   const MyHeading = document.querySelector(".header");
-  myHeading.textContent= myFullName + "\'s Lab 4.\n";
+  MyHeading.textContent= myFullName + "\'s Lab 4.\n";
 
   let newParagraphOne = document.createElement("p1");
   let newParagraphTwo = document.createElement("p2");
