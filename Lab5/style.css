@@ -1,0 +1,13 @@
+/*(8) Display the name of each country in a normal font weight.*/
+.countries {
+    font-weight: normal
+}
+
+.country-name {
+    font-weight: normal
+}
+
+/*(9) Display the country code in a bold font weight.*/
+.country-code {
+    font-weight: bold
+}
