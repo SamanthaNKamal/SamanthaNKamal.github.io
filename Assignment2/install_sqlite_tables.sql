@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS  'groups' ( "id" INTEGER PRIMARY KEY AUTOINCREMENT, "name" VARCHAR NOT NULL);
+INSERT INTO 'groups' ( "name") select "Home" WHERE NOT EXISTS (SELECT * FROM 'groups' WHERE name = "Home");
+CREATE TABLE IF NOT EXISTS  'people' ( "id" INTEGER PRIMARY KEY AUTOINCREMENT, "firstName" VARCHAR  NOT NULL);
+CREATE TABLE IF NOT EXISTS  'tasks' ( "id" INTEGER PRIMARY KEY AUTOINCREMENT, "taskName" VARCHAR  NOT NULL,   "dueDate" DATETIME, "groupId" INTEGER, "personId" INTEGER, "complete" BOOLEAN, "priority" INTEGER, FOREIGN KEY(groupId) REFERENCES groups (id),  FOREIGN KEY(personId) REFERENCES people (id) );
+INSERT INTO 'groups' (name) select "Company" WHERE NOT EXISTS (SELECT * FROM 'groups' WHERE name = "Company");
+INSERT INTO 'groups' (name) select "UMD" WHERE NOT EXISTS (SELECT * FROM 'groups' WHERE name ="UMD");
+INSERT INTO 'people' (firstName) select "Samantha" WHERE NOT EXISTS (SELECT * FROM 'people' WHERE firstName = "Samantha");
+INSERT INTO 'people' (firstName) select "Nikita" WHERE NOT EXISTS (SELECT * FROM 'people' WHERE firstName = "Nikita");
+INSERT INTO 'tasks' (taskName, dueDate, groupId, personId, complete, priority) select  "Submit INST 326 Final Project", "2020-12-14",3,1,0,1 WHERE NOT EXISTS (SELECT * FROM 'tasks' WHERE id = 1);
+INSERT INTO 'tasks' (taskName, dueDate, groupId, personId, complete, priority) select  "Submit INST 314 Unit 3 Projct", "2020-12-14",3,2,0,2 WHERE NOT EXISTS (SELECT * FROM 'tasks' WHERE id = 2);
+INSERT INTO 'tasks' (taskName, dueDate, groupId, personId, complete, priority) select  "Submit INST 335 Information-Enabled Change Project", "2020-12-11",1,1,0,2 WHERE NOT EXISTS (SELECT * FROM 'tasks' WHERE id = 3);
+INSERT INTO 'tasks' (taskName, dueDate, groupId, personId, complete, priority) select  "Submit INST 377 Assignmnet2", "2020-12-14",1,1,0,3 WHERE NOT EXISTS (SELECT * FROM 'tasks' WHERE id = 4);
+INSERT INTO 'tasks' (taskName, dueDate, groupId, personId, complete, priority) select  "Study For Finals", "2020-12-15",1,1,0,1 WHERE NOT EXISTS (SELECT * FROM 'tasks' WHERE id = 5);
