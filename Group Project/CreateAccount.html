@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="LoginCreateStyles.css">
+</head>
+<body>
+    <h1>Login</h1>
+	<form action="https://fierce-taiga-97625.herokuapp.com/lab" method = "post">
+		<ul>
+	
+		<li>
+		<label for="FirstName">First Name</label> 
+		<input type="text" id="FirstName" name="FirstName" maxlength="140">
+		</li>
+		<li>
+		<label for="LastName">Last Name</label> 
+		<input id="LastName" name="LastName" maxlength="140">
+        </li>
+        <li>
+        <label for="Email">Email Address</label> 
+        <input type="text" id="Email" name="Email" maxlength="140">
+        </li>
+        <li>
+        <label for="CreateUsername">Create a Username</label> 
+        <input type="text" id="" name="CreateUsername" maxlength="140">
+        </li>
+        <li>
+        <label for="CreatePassword">Create a Password</label> 
+        <input type="text" id="CreatePassword" name="CreatePassword" maxlength="140">
+        </li>
+
+        <li class="button">
+            <button type="Forgot">Forgot username/password</button>
+        </li>
+
+		<li class="button">
+		<button type="submit">Submit</button>
+        </li>
+	
+        <li class="button">
+            <button type="Create">CreateAccount</button>
+        </li>
+
+		</ul>
+	</form>
+</body>
+
+</html>
